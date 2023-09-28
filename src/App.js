@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import getUserId from './api/spotify';
 import './App.css';
 
 function App() {
@@ -32,7 +33,7 @@ function App() {
     // Check the URL hash for an access token
     const hash = window.location.hash;
     let token = window.localStorage.getItem('token');
-    
+
     if (!token && hash) {
       // Extract and set the token from the URL hash
       token = hash.substring(1).split('&').find(elem => elem.startsWith('access_token')).split('=')[1];
@@ -41,7 +42,14 @@ function App() {
     }
     // Set the token state
     setToken(token);
+    getUserId(token, setToken);
   }, []);
+
+  const logout = () => {
+    setToken("");
+    clearExistingTokens();
+    window.localStorage.removeItem("user_id");
+  }
 
   return (
     // Check if valid token is present, and adjust return accordingly
@@ -49,7 +57,10 @@ function App() {
       <header className="App-header">
         <h1>Spotify React</h1>
         {token ? (
-          <h2>You are logged in!</h2>
+          <div>
+            <h2>You are logged in!</h2>
+            <button onClick={logout}>Log out</button>
+          </div>
         ) : (
           <a onClick={handleSpotifyAuthClick} href="#/">Login to Spotify</a>
         )}
