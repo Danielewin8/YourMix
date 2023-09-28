@@ -1,3 +1,6 @@
+# https://developer.spotify.com/documentation/web-api
+# https://platform.openai.com/docs/introduction
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
