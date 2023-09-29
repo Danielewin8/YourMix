@@ -72,13 +72,16 @@ function App() {
             </h1>
             {token ? (
               <div>
-                <h2>You are logged in!</h2>
+                <h3>You are logged in!</h3>
                 <button className='logout-button' onClick={logout}>Log out</button>
               </div>
             ) : (
-              <button className="login-button" onClick={handleSpotifyAuthClick}>
-                Login to Spotify
-              </button>
+              <div>
+                <h3>Create a mix to fit your mood.</h3>
+                <button className="login-button" onClick={handleSpotifyAuthClick}>
+                  Login to Spotify
+                </button>
+              </div>
             )}
           </React.Fragment>
         )}
