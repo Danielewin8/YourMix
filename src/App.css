@@ -3,10 +3,10 @@
 
 body {
   text-align: center;
+  background-color: #121212;
 }
 
 .App {
-  background-color: #121212;
   position: relative;
   min-height: 100vh;
   display: flex;
@@ -29,11 +29,12 @@ h1 {
   color: white;
 }
 
-h2 {
+h3 {
   font-family: 'Montserrat', sans-serif;
   font-weight: normal;
   margin-top: 10px;
   color: white;
+  font-style: italic;
 }
 
 .login-button {
