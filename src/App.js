@@ -1,10 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import getUserId from './api/spotify';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSpotify } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
 
 function App() {
   // State to store the access token
   const [token, setToken] = useState('');
+  // State to store the loading state
+  const [loading, setLoading] = useState(true);
+
 
   // Variables for Spotify authentication
   const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
@@ -43,6 +48,9 @@ function App() {
     // Set the token state
     setToken(token);
     getUserId(token, setToken);
+
+    // Update loading state
+    setLoading(false);
   }, []);
 
   const logout = () => {
@@ -51,22 +59,33 @@ function App() {
     window.localStorage.removeItem("user_id");
   }
 
+  // Check if valid token is present, and adjust return accordingly
   return (
-    // Check if valid token is present, and adjust return accordingly
     <div className="App">
       <header className="App-header">
-        <h1>Spotify React</h1>
-        {token ? (
-          <div>
-            <h2>You are logged in!</h2>
-            <button onClick={logout}>Log out</button>
-          </div>
+        {loading ? (
+          <div className='loader'>Loading...</div>
         ) : (
-          <a onClick={handleSpotifyAuthClick} href="#/">Login to Spotify</a>
+          <React.Fragment>
+            <h1>
+              <FontAwesomeIcon icon={faSpotify} /> YourMix
+            </h1>
+            {token ? (
+              <div>
+                <h2>You are logged in!</h2>
+                <button className='logout-button' onClick={logout}>Log out</button>
+              </div>
+            ) : (
+              <button className="login-button" onClick={handleSpotifyAuthClick}>
+                Login to Spotify
+              </button>
+            )}
+          </React.Fragment>
         )}
       </header>
     </div>
   );
+
 }
 
 export default App;
