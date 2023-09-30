@@ -3,7 +3,9 @@
 
 body {
   text-align: center;
-  background-color: #121212;
+  background: linear-gradient(#121212, black);
+  margin: 0; 
+  height: 100vh; 
 }
 
 .App {
