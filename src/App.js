@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import getUserId from './api/spotify';
+import getUserId from './helpers/userId';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
