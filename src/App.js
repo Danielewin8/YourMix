@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import getUserId from './helpers/userId';
+import ChatGPTSearch from './search/Search';
+import getUserId from './helpers/UserId';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify } from '@fortawesome/free-brands-svg-icons';
 import './App.css';
@@ -72,12 +73,12 @@ function App() {
             </h1>
             {token ? (
               <div>
-                <h3>You are logged in!</h3>
+                <ChatGPTSearch />
                 <button className='logout-button' onClick={logout}>Log out</button>
               </div>
             ) : (
               <div>
-                <h3>Create a mix to fit your mood.</h3>
+                <h3>Create a Spotify mix to fit your mood.</h3>
                 <button className="login-button" onClick={handleSpotifyAuthClick}>
                   Login to Spotify
                 </button>
