@@ -30,7 +30,7 @@ describe('App component', () => {
     render(<App />);
 
     // Expect the component to render content for authenticated users
-    const authenticatedContent = screen.getByText('You are logged in!');
+    const authenticatedContent = screen.getByText('Search');
     expect(authenticatedContent).toBeInTheDocument();
 
     // Expect the token state to be set correctly
