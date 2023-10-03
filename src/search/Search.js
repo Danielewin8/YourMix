@@ -2,17 +2,19 @@ import React, { useState } from 'react';
 import axios from 'axios';
 
 const ChatGPTSearch = () => {
-    // State for input, number of songs, generated songs, loading state, and completion state
+    // State for input, number of songs, generated songs, loading state, completion state, and errors
     const [input, setInput] = useState("");
     const [length, setLength] = useState(10);
     const [songs, setSongs] = useState([]);
     const [loading, setLoading] = useState(false);
     const [loaded, setLoaded] = useState(false);
+    const [error, setError] = useState(null);
 
     // Function to handle loading state before making a playlist request
     const loadingPlaylist = () => {
         setLoading(true);
         setLoaded(false);
+        setError(null);
 
         // Request prompt for making requests to ChatGPT
         const request = {
@@ -44,8 +46,8 @@ const ChatGPTSearch = () => {
             }
         })
             .then((res) => {
-                console.log("Request Prompt:", request.prompt);
-                console.log("Response Text:", res.data.choices[0].text);
+                // console.log("Request Prompt:", request.prompt);
+                // console.log("Response Text:", res.data.choices[0].text);
 
                 // Handle successful response
                 if (res.status === 200) {
@@ -60,7 +62,8 @@ const ChatGPTSearch = () => {
             .catch((e) => {
                 // Handle request error
                 setLoading(false);
-                console.log(e.message);
+                setError("Oops! Something went wrong");
+                console.error(e.message);
             });
     };
 
@@ -73,7 +76,7 @@ const ChatGPTSearch = () => {
                     type='text'
                     className='w500 inputField'
                     onChange={(e) => setInput(e.target.value)}
-                    placeholder='Eg: Metal songs for running"'
+                    placeholder="Eg: Metal songs for running"
                 />
                 {/* Range input for selecting the number of songs */}
                 <input
@@ -93,6 +96,7 @@ const ChatGPTSearch = () => {
                 {/* Display loading and completion messages */}
                 {loading ? <h3>Loading Playlist!</h3> : null}
                 {loaded ? <h3>Playlist loaded!</h3> : null}
+                {error ? <h3>{error}</h3> : null}
             </div>
         </div>
     );
