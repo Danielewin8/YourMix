@@ -1,0 +1,43 @@
+/* Playlist.css */
+
+.playlist {
+    font-family: 'Montserrat', sans-serif;
+    position: relative;
+    width: 1400px;
+    margin: 0 auto;
+    background-color: #212121;
+    border: solid black 1px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+}
+
+th,td {
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+  }
+  
+  th::after {
+    content: "";
+    display: block;
+    width: 80%; /* Adjust the width as needed */
+    height: 2px; /* Adjust the thickness as needed */
+    background-color: #1DB954; /* Adjust the color as needed */
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+td {
+    font-size: 25px;
+}
