@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import ChatGPTSearch from './search/Search';
+import Search from './search/Search';
 import getUserId from './helpers/UserId';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSpotify } from '@fortawesome/free-brands-svg-icons';
@@ -73,7 +73,7 @@ function App() {
             </h1>
             {token ? (
               <div>
-                <ChatGPTSearch />
+                <Search />
                 <button className='logout-button' onClick={logout}>Log out</button>
               </div>
             ) : (
