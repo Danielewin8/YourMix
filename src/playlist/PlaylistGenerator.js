@@ -7,7 +7,7 @@ const PlaylistGenerator = ({ spotifyTracks }) => {
 
     const createPlaylist = async () => {
         try {
-            // Assuming you have the Spotify access token
+            // Grab our Spotify access token
             const spotifyAccessToken = window.localStorage.getItem("token");
 
             // Get the track URIs from the Spotify tracks
@@ -56,9 +56,6 @@ const PlaylistGenerator = ({ spotifyTracks }) => {
 
     return (
         <div>
-            {/* Your existing component content */}
-            {/* ... */}
-
             {/* Input field for the playlist name */}
             <input
                 type="text"
