@@ -1,5 +1,7 @@
 import React from "react";
-import "./Playlist.css";
+import "./NewPlaylist.css";
+
+// This function accepts the data from our ChatGPT and Spotify requests, maps them and displays them accordingly through a table
 
 function NewPlaylist({ playlist }) {
   return (
@@ -11,7 +13,7 @@ function NewPlaylist({ playlist }) {
             <th>Title</th>
             <th>Album</th>
             <th>Duration</th>
-            <th>Preview</th> 
+            <th>Preview</th>
           </tr>
         </thead>
         <tbody>
@@ -19,11 +21,11 @@ function NewPlaylist({ playlist }) {
             <tr key={index}>
               <td>{track.chatGPTResponse.id}</td>
               <td>
-                {track.chatGPTResponse.title}
+                {track.spotifyTrack.name} {/* Using Spotify track name */}
                 <br />
-                {track.chatGPTResponse.artist}
+                {track.spotifyTrack.artists[0].name} {/* Using the first artist's name */}
               </td>
-              <td>{track.chatGPTResponse.album}</td>
+              <td>{track.spotifyTrack.album.name}</td>
               <td>{track.chatGPTResponse.duration}</td>
               <td>
                 {track.spotifyTrack.preview_url ? (
