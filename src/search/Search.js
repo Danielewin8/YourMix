@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import axios from 'axios';
-import NewPlaylist from '../playlist/Playlist';
+import NewPlaylist from '../playlist/NewPlaylist';
+import PlaylistGenerator from '../playlist/PlaylistGenerator';
 import './Search.css';
 
 const Search = () => {
@@ -86,7 +87,7 @@ const Search = () => {
                 setError(`No tracks found for query: ${spotifySearchQuery}`);
               }
             } catch (error) {
-                setError(`Error processing Spotify API request: ${error.message}`);
+                setError(`User login expired, please log out and back in: ${error.message}`);
             }
           }
 
@@ -142,7 +143,8 @@ const Search = () => {
           </div>
         ) : null}
         {loaded ? <NewPlaylist playlist={spotifyTracks} /> : null}
-        {error ? <h5>{error}</h5> : null}
+        {error ? <h5 className='error-message'>{error}</h5> : null}
+        {loaded && <PlaylistGenerator spotifyTracks={spotifyTracks} />}
       </div>
     </div>
   );
