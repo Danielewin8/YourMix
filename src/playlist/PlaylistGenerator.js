@@ -55,7 +55,10 @@ const PlaylistGenerator = ({ spotifyTracks }) => {
     };
 
     return (
-        <div>
+        <div className='add-playlist'>
+            <h5 className='playlist-query'>
+                {playlistCreated ? 'Playlist created successfully!' : 'Add playlist to your Spotify?'}
+            </h5>
             {/* Input field for the playlist name */}
             <input
                 type="text"

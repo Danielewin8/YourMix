@@ -64,3 +64,8 @@
     border: 2.1px solid white;
     background-color: #212121;
 }
+
+.error-message {
+    margin-top: 10px; 
+    color: red; 
+}
