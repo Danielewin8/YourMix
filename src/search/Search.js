@@ -87,7 +87,7 @@ const Search = () => {
                 setError(`No tracks found for query: ${spotifySearchQuery}`);
               }
             } catch (error) {
-                setError(`User login expired, please log out and back in: ${error.message}`);
+              setError(`User login expired, please log out and then log back in`);
             }
           }
 
@@ -141,10 +141,14 @@ const Search = () => {
             <h5>Loading Playlist...</h5>
             <div className="spinner"></div>
           </div>
+        ) : error ? (
+          <h5 className='error-message'>{error}</h5>
+        ) : loaded ? (
+          <>
+            <NewPlaylist playlist={spotifyTracks} />
+            <PlaylistGenerator spotifyTracks={spotifyTracks} />
+          </>
         ) : null}
-        {loaded ? <NewPlaylist playlist={spotifyTracks} /> : null}
-        {error ? <h5 className='error-message'>{error}</h5> : null}
-        {loaded && <PlaylistGenerator spotifyTracks={spotifyTracks} />}
       </div>
     </div>
   );

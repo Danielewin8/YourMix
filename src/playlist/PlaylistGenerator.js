@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './PlaylistGenerator.css'
+
+// The PlaylistGenerator function/component takes our spotifyTracks data and uses it to make a POST request to the Spotify API and our account, creating an actual playlist in Spotify!
 
 const PlaylistGenerator = ({ spotifyTracks }) => {
     const [playlistName, setPlaylistName] = useState('');
@@ -55,20 +58,23 @@ const PlaylistGenerator = ({ spotifyTracks }) => {
     };
 
     return (
-        <div>
+        <div className='add-playlist'>
+            <h5 className='playlist-query'>
+                {playlistCreated ? 'Playlist created successfully!' : 'Add playlist to your Spotify?'}
+            </h5>
             {/* Input field for the playlist name */}
             <input
                 type="text"
+                className='playlist-name'
                 placeholder="Enter playlist name"
                 value={playlistName}
                 onChange={(e) => setPlaylistName(e.target.value)}
             />
 
             {/* Button to create a playlist */}
-            <button onClick={createPlaylist}>Create Playlist</button>
-
-            {/* Show a success message if the playlist was created */}
-            {playlistCreated && <p>Playlist created successfully!</p>}
+            <button className='playlist-create' onClick={createPlaylist}>
+                {playlistCreated ? 'Playlist Added!' : 'Add Playlist'}
+            </button>
         </div>
     );
 };
