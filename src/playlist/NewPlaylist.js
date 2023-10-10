@@ -1,7 +1,7 @@
 import React from "react";
 import "./NewPlaylist.css";
 
-// This function accepts the data from our ChatGPT and Spotify requests, maps them and displays them accordingly through a table
+// The NewPlaylist function/component accepts a playlist, which is the collection of the data from our ChatGPT and Spotify requests from the Search component. It maps and iterates through the playlist, displaying the information in a table format.
 
 function NewPlaylist({ playlist }) {
   return (
