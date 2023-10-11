@@ -4,6 +4,8 @@ import NewPlaylist from '../playlist/NewPlaylist';
 import PlaylistGenerator from '../playlist/PlaylistGenerator';
 import './Search.css';
 
+// The Search function/component handles user input, making requests to ChatGPT and then to Spotify APIs.
+
 const Search = () => {
   // State variables for input, number of songs, Spotify tracks, loading state, loaded state, and errors
   const [input, setInput] = useState("");

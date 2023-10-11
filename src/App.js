@@ -52,6 +52,9 @@ function App() {
 
     // Update loading state
     setLoading(false);
+
+    document.body.classList.add('fade-in');
+    document.querySelector('.App').classList.add('fade-in-delay');
   }, []);
 
   const logout = () => {
