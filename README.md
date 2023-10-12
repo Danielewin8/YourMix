@@ -22,7 +22,7 @@ The website uses two api's, Spotify's and ChatGPT's which are listed below. Firs
 # https://platform.openai.com/docs/introduction
 
 # Other Comments
-Overall for this project I aimed to make a simple and easy to use app that could I could actually see myself using. Spotify has an incredible library of content, but I felt that sometimes searching in a more organic and specific way could be difficult. Working with AI and ChatGPT was extremely exciting and fun, and was a great way to integrate a fix to this issue to a certain degree, allowing for broader and more unique requests. I learned a lot about using and intertwining the functionality of multiple API's at once, and got a lot more practice working with React. I felt my approach and workflow I took with this really benefited me and increased my overall skills. This app was a ton of fun to make!
+Overall for this project I aimed to make a simple and easy to use app that I could actually see myself using. Spotify has an incredible library of content, but I felt that sometimes searching in a more organic and specific way could be difficult. Working with AI and ChatGPT was extremely exciting and fun, and was a great way to integrate a fix to this issue to a certain degree, allowing for broader and more unique requests. I learned a lot about using and intertwining the functionality of multiple API's at once, and got a lot more practice working with React. I felt my approach and workflow I took with this really benefited me and increased my overall skills. This app was a ton of fun to make!
 
 
 
