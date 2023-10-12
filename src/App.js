@@ -14,7 +14,7 @@ function App() {
 
   // Variables for Spotify authentication
   const CLIENT_ID = process.env.REACT_APP_SPOTIFY_CLIENT_ID;
-  const REDIRECT_URI = 'http://localhost:3000';
+  const REDIRECT_URI = 'http://localhost:8888/callback';
   const SCOPES = ['playlist-modify-public'];
   const AUTH_ENDPOINT = 'https://accounts.spotify.com/authorize';
 
