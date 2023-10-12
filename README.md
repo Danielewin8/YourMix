@@ -6,7 +6,7 @@
 # About
 I created a ReactJS app called "YourMix." This is a Spotify playlist maker that can create diverse playlists based on specific queries. These queries use AI and ChatGPT to offer more quick and specific music based on your mood or interest. I have integrated seamless authentication and playlist creation through Spotify's API, offering an ephemeral and easy to use application.
 
-*DUE TO THE APP STILL TECHNICALLY BEING IN DEVELOPMENT MODE THROUGH SPOTIFY'S DEVELOPER DASHBOARD, THIS CAN ONLY BE USED THROUGH DEMONSTRATION ON MY END, OR BY MANUALLY ADDING ANOTHER USER"S EMAIL.*
+*DISCLAIMER: DUE TO THE APP STILL TECHNICALLY BEING IN DEVELOPMENT MODE THROUGH SPOTIFY'S DEVELOPER DASHBOARD, THIS CAN ONLY BE USED THROUGH DEMONSTRATION ON MY END, OR BY MANUALLY ADDING ANOTHER USER"S EMAIL.*
 
 The site uses the following technologies:
 <ul>
