@@ -1,5 +1,30 @@
+# CapstoneProject - YourMix - Daniel Lewin
+# https://yourmix.onrender.com/
+
+![YourMixPreview](https://github.com/Danielewin8/YourMix/assets/113627851/6776dc90-2232-4108-9ea6-0f9d7d639853)
+
+# About
+I created a ReactJS app called "YourMix." This is a Spotify playlist maker that can create diverse playlists based on specific queries. These queries use AI and ChatGPT to offer more quick and specific music based on your mood or interest. I have integrated seamless authentication and playlist creation through Spotify's API, offering an ephemeral and easy to use application.
+
+The site uses the following technologies:
+<ul>
+  <li>Javascript</li>
+  <li>ReactJS</li>
+  <li>HTML</li>
+  <li>CSS</li>
+</ul> 
+
+# Typical User Flow
+The website uses two api's, Spotify's and ChatGPT's which are listed below. First, a user can authenticate and login with their own Spotify account, saving this information for use in creating playlists later. Then a user is able to search and ask for a list of songs ranging from 1 to 30 based on any request. These search queries are powered by AI and ChatGPT, allowing for a user to get more unique and different options in terms of results. These queries could be anything from asking for "Running music of a specific genre", or "Music similar to a specific artist or soundtrack" etc. ChatGPT takes these requests and responds in JSON allowing the data to then be translated and sent to Spotify to retrieve the corresponding music from there. The songs and their information are then displayed for the user, including some basic info and even a song preview for those that allow it. An option to then actually add and name this generated playlist to their own Spotify account is available. After submitting this, the user can check their actual Spotify account/playlists and see their newly add mix.
+
+# API's: 
 # https://developer.spotify.com/documentation/web-api
 # https://platform.openai.com/docs/introduction
+
+# Other Comments
+Overall for this project I aimed to make a simple and easy to use app that could I could actually see myself using. Spotify has an incredible library of content, but I felt that sometimes searching in a more organic and specific way could be difficult. Working with AI and ChatGPT was extremely exciting and fun, and was a great way to integrate a fix to this issue to a certain degree, allowing for broader and more unique requests. I learned a lot about using and intertwining the functionality of multiple API's at once, and got a lot more practice working with React. I felt my approach and workflow I took with this really benefited me and increased my overall skills. This app was a ton of fun to make!
+
+
 
 # Getting Started with Create React App
 
