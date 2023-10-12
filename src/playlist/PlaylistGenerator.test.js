@@ -9,7 +9,6 @@ describe('PlaylistGenerator Component', () => {
   test('renders the component', () => {
     render(<PlaylistGenerator spotifyTracks={[]} />);
     
-    // You can add more specific assertions based on your component structure
     expect(screen.getByText('Add playlist to your Spotify?')).toBeInTheDocument();
   });
 
