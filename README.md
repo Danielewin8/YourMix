@@ -1,14 +1,14 @@
 # CapstoneProject - YourMix - Daniel Lewin
 # https://yourmix.onrender.com/
 
-https://github.com/Danielewin8/YourMix/assets/113627851/c820254f-089c-432e-8665-9665d94e0305
+https://github.com/Danielewin8/YourMix/assets/113627851/0ce737c4-6e0a-43a6-8858-72e9fce2dd48
 
 ![YourMixPreview](https://github.com/Danielewin8/YourMix/assets/113627851/6776dc90-2232-4108-9ea6-0f9d7d639853)
 
 # About
 I created a ReactJS app called "YourMix." This is a Spotify playlist maker that can create diverse playlists based on specific queries. These queries use AI and ChatGPT to offer more quick and specific music based on your mood or interest. I have integrated seamless authentication and playlist creation through Spotify's API, offering an ephemeral and easy to use application.
 
-*DISCLAIMER: DUE TO THE APP STILL TECHNICALLY BEING IN DEVELOPMENT MODE THROUGH SPOTIFY'S DEVELOPER DASHBOARD AND AWAITING APPROVAL FOR DEPLOYMENT, THIS CAN ONLY BE USED THROUGH DEMONSTRATION ON MY END, OR BY MANUALLY ADDING ANOTHER USER'S EMAIL.*
+*DISCLAIMER: DUE TO SOME ISSUES WITH SPOTIFY'S GUIDELINES, THIS CAN ONLY BE USED THROUGH DEMONSTRATION ON MY END, OR BY MANUALLY ADDING/ONBOARDING ANOTHER USER'S EMAIL.*
 
 The site uses the following technologies:
 <ul>
