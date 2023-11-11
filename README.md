@@ -1,6 +1,8 @@
 # CapstoneProject - YourMix - Daniel Lewin
 # https://yourmix.onrender.com/
 
+https://github.com/Danielewin8/YourMix/assets/113627851/c820254f-089c-432e-8665-9665d94e0305
+
 ![YourMixPreview](https://github.com/Danielewin8/YourMix/assets/113627851/6776dc90-2232-4108-9ea6-0f9d7d639853)
 
 # About
