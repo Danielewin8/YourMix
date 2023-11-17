@@ -3,12 +3,12 @@
 
 https://github.com/Danielewin8/YourMix/assets/113627851/0ce737c4-6e0a-43a6-8858-72e9fce2dd48
 
+*DISCLAIMER: DUE TO SOME ISSUES WITH SPOTIFY'S GUIDELINES, THIS CAN ONLY BE USED THROUGH DEMONSTRATION ON MY END, OR BY MANUALLY ADDING/ONBOARDING ANOTHER USER'S EMAIL. I HAVE PROVIDED A VIDEO DEMO BELOW*
+
 ![YourMixPreview](https://github.com/Danielewin8/YourMix/assets/113627851/6776dc90-2232-4108-9ea6-0f9d7d639853) READ DISCLAIMER BELOW
 
 # About
 I created a ReactJS app called "YourMix." This is a Spotify playlist maker that can create diverse playlists based on specific queries. These queries use AI and ChatGPT to offer more quick and specific music based on your mood or interest. I have integrated seamless authentication and playlist creation through Spotify's API, offering an ephemeral and easy to use application.
-
-*DISCLAIMER: DUE TO SOME ISSUES WITH SPOTIFY'S GUIDELINES, THIS CAN ONLY BE USED THROUGH DEMONSTRATION ON MY END, OR BY MANUALLY ADDING/ONBOARDING ANOTHER USER'S EMAIL. I HAVE PROVIDED A VIDEO DEMO INSTEAD*
 
 The site uses the following technologies:
 <ul>
